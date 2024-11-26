@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	http.Handle("/", http.FileServer(http.Dir("./static")))
+	http.Handle("/", http.FileServer(http.Dir("./sratic")))
 }
