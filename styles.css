@@ -1,0 +1,26 @@
+body {
+    display: flex;               /* Enable flexbox on the parent container */
+    justify-content: flex-start;     /* Center children horizontally */
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: salmon;
+    height: 100vh;
+    margin: 0;
+}
+
+.header-row {
+    align-self: flex-start;
+    text-align: left;
+}
+.center-row {
+    align-self: space-evenly;
+    justify-content: center;
+    align-items: center;
+    text-align: center;          /* Center-align text within the div */
+}
+
+.footer-row {
+    max-width: fit-content;
+    align-self: baseline;
+}
