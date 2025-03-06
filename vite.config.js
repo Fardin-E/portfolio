@@ -5,5 +5,6 @@ export default defineConfig({
   build: {
     outDir: 'dist'
   },
-  publicDir: 'public' // This is default, but good to be explicit
+  publicDir: 'public', // This is default, but good to be explicit
+
 });
