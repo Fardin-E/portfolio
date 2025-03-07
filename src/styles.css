@@ -4,33 +4,53 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background-color: #d4b2c7;
-    height: 100vh;
+    background-color: #c9b9c9;
+    min-height: 100vh; /* Changed from height to min-height */
     margin: 0;
-}
-
-/* Header styles */
-.header-row nav ul {
+    border: 30px solid salmon; /* Salmon pink color */
+    box-sizing: border-box;
+    padding-bottom: 30px; /* Add some padding at the bottom */
+  }
+  
+  /* Header styles */
+  .header-row nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex; /* Makes the list items display horizontally */
-}
-
-.header-row ul li {
-    margin-right: 20px;
-}
-
-.center-row {
+  }
+  
+  .center-row {
     display: flex;
     flex-direction: column; /* This will stack the intro and content vertically */
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-}
+  }
+  
+  .project {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .project-item {
+    border: 2px solid;
+  }
 
-.footer-row {
-    max-width: fit-content;
-    align-self: flex-start;
-}
+  /* Style all icons in the .icons div */
+  .icons a {
+    text-decoration: none;
+    color: inherit; /* Inherits color from parent */
+    margin: 0 10px; /* Adds spacing between icons */
+  }
+
+  .icons a:hover {
+    color: #6e5494; /* GitHub purple on hover */
+  }
+
+.icons i {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+  }
